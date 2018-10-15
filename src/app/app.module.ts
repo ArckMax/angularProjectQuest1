@@ -11,7 +11,7 @@ import { MenuComponent } from './menu/menu.component';
 const appRoutes:Routes = [
   {path:"signup", component:SignUpComponent, pathMatch:"full"},
   {path:"userprofile", component:UserProfileComponent, pathMatch:"full"},
-  {path:"", redirectTo:"UserProfileComponent", pathMatch:"full"}
+  {path:"", redirectTo:"userprofile", pathMatch:"full"}
 ]
 
 @NgModule({
