@@ -1,0 +1,9 @@
+<img [src]=user.photo>
+<p>Name : {{user.name}}</p>
+<p>Firstname : {{user.firstName}}</p>
+
+<p [class]=toggled> Age : {{user.age}}</p>
+
+<p>Quote : {{user.quote}}</p>
+<input type="text" [(ngModel)]="user.quote"><br/>
+<button (click)="toggleAge()">Afficher/ Cacher mon âge</button>
