@@ -7,4 +7,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Maxime Gypteau';
+
+  public movies:string[] = ["The Godfather", "Star Wars", "Citizen Kane", "Pulp Fiction" , "Apocalypse Now" , " 2001 : A Space Odyssey", "Blade Runner"]
+
+  public showMovies:boolean = true;
 }

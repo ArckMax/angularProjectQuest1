@@ -8,3 +8,14 @@
 <app-menu></app-menu>
 
 <router-outlet></router-outlet>
+
+<div *appShowMovies = "showMovies">
+  <h1>Une liste de films à voir absolument ! </h1>
+  <p appHighlightOnHover>{{movies[0]}}</p>
+  <p>{{movies[1]}}</p>
+  <p>{{movies[2]}}</p>
+  <p>{{movies[3]}}</p>
+  <p>{{movies[4]}}</p>
+  <p>{{movies[5]}}</p>
+  <p>{{movies[6]}}</p>
+</div>

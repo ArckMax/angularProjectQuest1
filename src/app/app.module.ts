@@ -7,11 +7,13 @@ import { AppComponent } from './app.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { UserProfileComponent } from './user-profile/user-profile.component';
 import { MenuComponent } from './menu/menu.component';
+import { HighlightOnHoverDirective } from './highlight-on-hover.directive';
+import { ShowMoviesDirective } from './show-movies.directive';
 
 const appRoutes:Routes = [
   {path:"signup", component:SignUpComponent, pathMatch:"full"},
   {path:"userprofile", component:UserProfileComponent, pathMatch:"full"},
-  {path:"", redirectTo:"userprofile", pathMatch:"full"}
+  {path:"", redirectTo:"/userprofile", pathMatch:"full"}
 ]
 
 @NgModule({
@@ -19,7 +21,9 @@ const appRoutes:Routes = [
     AppComponent,
     SignUpComponent,
     UserProfileComponent,
-    MenuComponent
+    MenuComponent,
+    HighlightOnHoverDirective,
+    ShowMoviesDirective
   ],
   imports: [
     BrowserModule,
